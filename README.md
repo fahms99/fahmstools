@@ -1,128 +1,150 @@
 # fahmstools
 
-#!/bin/bash
-#version 1.0
-
-# Variables
-b='\033[1m'
-u='\033[4m'
-bl='\E[30m'
-r='\E[31m'
-g='\E[32m'
-bu='\E[34m'
-m='\E[35m'
-c='\E[36m'
-w='\E[37m'
-endc='\E[0m'
-enda='\033[0m'
-blue='\e[1;34m'
-cyan='\e[1;36m'
-red='\e[1;31m'
-
-figlet FahmsTools | lolcat
-
-echo -e  "_____________________________________________________________"
-echo -e  "Tools    : Fahmstools $blue         " |lolcat
-echo -e  "Createddby  : fahmi mubarok $white   " |lolcat
-echo -e  "Contact  : fmubarok99@gmail.com $white " |lolcat
-echo -e  "_____________________________________________________________"
-
-###################################################
-# CTRL + C
-###################################################
-trap ctrl_c INT
-ctrl_c() {
+#usr/bin/bash
 clear
-echo -e $red"[#]> (Ctrl + C ) Detected, Trying To Exit ... "
-echo -e $cyan"[#]> Thanks"
-sleep 1
-echo ""
-echo -e $white"[#]> see you gaes :)..."
-sleep 1
-exit
-}
-
-lagi=1
-while [ $lagi -lt 6 ];
-do
-echo ""
-echo -e $b "1.  Nmap${enda}";
-echo -e "============================" | lolcat
-echo -e $r "2.  Admin-finder${endc}";
-echo -e "============================" | lolcat
-echo -e $g "3.  RED_HAWK${endc}";
-echo -e "============================" | lolcat
-echo -e $c "4   Lazymux${endc}";
-echo -e "============================" | lolcat
-echo -e $r"5.  Tools-X${endc}";
-echo -e "============================" | lolcat
-echo -e $r "6. Exit${endc}";
-echo ""
-echo -e "╭─0day" |lolcat
-read -p "╰─#" pil;
-
-# Nmap
-
-case $pil in
-1) pkg install nmap
-echo -e  "${y} {1} Masukkan Web${endc}:"
-read web
-nmap $web
+#ini warna
+bi='\033[34;1m' #biru
+i='\033[32;1m' #hijau
+pur='\033[35;1m' #purple
+cy='\033[36;1m' #cyan
+me='\033[31;1m' #merah
+pu='\033[37;1m' #putih
+ku='\033[33;1m' #kuning
+# Ahmad fahmi mubarok
 echo
-
-;;
-
-# admin-finder
-
-2) git clone  https://github.com/the-c0d3r/admin-finder.git
-echo -e "${y} cara menggunakan admin finder"
-echo -e "${y} cd admin-finder"
-echo -e "${y} python admin-finder.py"
-cd /data/data/com.termux/files/home/admin-finder/
-python2 /data/data/com.termux/files/home/admin-finder/admin-finder.py
 echo
+#ini paket untuk menjalankan tools
+H-Zv.1.sh
+echo
+clear
+echo
+echo $bi "      __  _____   ________ __    _____   ____  _   ________"
+echo $i  "     / / / /   | / ____/ //_/   /__  /  / __ \/ | / / ____/"
+echo $pur"     / /_/ / /| |/ /   / ,<        / /  / / / /  |/ / __/"
+echo $cy "   / __  / ___ / /___/ /| |      / /__/ /_/ / /|  / /"   $me" For"
+echo $me "  /_/ /_/_/  |_\____/_/ |_|     /____/\____/_/ |_/_____/"$me" Andr>
+echo
+echo
+echo $cy "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━>
+echo $i  "AUTHOR   : FHM99                                              >
+echo $cy "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━>
+echo $i  "TEAM  : ÎÑĎØNESIAN•DarkNET {From Cyber To Brother}                                   |"
+echo $cy "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━>
+echo $i  "TOOLS    : TOOLS INSTALLER                                        >
+echo $cy "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━>
+echo
+echo
+echo      "━━━━━━━━━━━━━━━━━━DAFTAR TOOLS━━━━━━━━━━━━━━━━━━"
+echo $bi  "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo $bi   "1)."$bi" SCRIPT DEFACE MAKER"
+echo $bi  "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo $i   "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo $i    "2)."$i" DDOS HAMMER"
+echo $i   "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo $me  "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo $me   "3)."$me" DEFACE WEBDAV"
+echo $me  "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo $ku  "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo $ku   "4)."$ku" PHISING WEEMAN"
+echo $ku  "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo $pur "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo $pur  "5)."$pur" HACK FACEBOOK"echo $pur "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo $cy  "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo $cy   "6)."$cy" SQLMAP"
+echo $cy  "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo $me  "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo $me   "7)."$me" Keluar"
+echo $me  "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo
+echo
+echo $cy"━━━"$bi"{ HACK ZONE }"
+echo $cy"|"
+read -p"━━━" pil;
 
-;;
+if [ $pil = 1 ]
+then
+clear
+apt install python2 -y
+apt install git -y
+git clone https://github.com/4L13199/LITESCRIPT
+ls
+cd LITESCRIPT
+ls
+python2 LITESCRIPT.py
+fi
 
-#RED_HAWK
+if [ $pil = 2 ]
+then
+clear
+pkg install git
+pkg install python
+git clone https://github.com/cyweb/hammer
+cd hammer
+python hammer.py
+fi
 
-3) git clone https://github.com/Tuhinshubhra/RED_HAWK
-echo -e "${y} Installer RED_HAWK..."
-echo -e "${y} cd RED_HAWK"
-echo -e "${y} php RED_HAWK.php"
-cd /data/data/com.termux/files/home/RED_HAWK/
-php /data/data/com.termux/files/home/RED_HAWK/ RED_HAWK.php
+if [ $pil = 3 ]
+then
+clear
+apt upgrade
+apt update
+apt install git
+git clone https://github.com/Amriez/AOCDEFACE
+cd AOCDEFACE
+sh install.sh
+sh AOC.shfi
 
-;;
+if [ $pil = 4 ]
+then
+clear
+pkg install git
+pip2 install beautifulsoup4
+pkg install python2
+git clone https://github.com/samyoyo/weeman
+cd weeman
+python2 weeman.py
+fi
 
-#Lazymux
+if [ $pil = 5 ]
+then
+clear
+pkg install python2
+pkg install git
+pip2 install mechanize requests
+git clone https://github.com/pashayogi/SETAN
+cd SETAN
+python2 SETAN.py
+fi
 
-4) git clone https://github.com/Gameye98/Lazymux
-echo -e "${y} Installer Lazymux..."
-echo -e "${y} cd Lazymux"
-echo -e "${y} python lazymux.py"
-cd /data/data/com.termux/files/home/Lazymux/
-python2 /data/data/com.termux/files/home/Lazymux/ lazymux.py
+if [ $pil = 6 ]
+then
+clear
+pkg update
+pkg upgrade
+pkg install python2
+pkg install git
+git clone https://github.com/sqlmapproject/sqlmap
+cd sqlmap
+python2 sqlmap.py
+fi
 
-;;
-
-#Tools-X
-
-5) git clone https://github.com/Rajkumrdusad/Tool-X
-echo -e "${y} Installer Tool-X..."
-echo -e "${y} cd Tool-X"
-echo -e "${y} sh install.aex"
-cd /data/data/com.termux/files/home/Tool-X
-bash /data/data/com.termux/files/home/Tool-X/sh install.aex
-
-;;
-
-
-6) echo "created by : 0daysecurity98" | lolcat
+if [ $pil = 7 ]
+then
+clear
+echo $bi "      __  _____   ________ __    _____   ____  _   ________"
+echo $i  "     / / / /   | / ____/ //_/   /__  /  / __ \/ | / / ____/"
+echo $pur"     / /_/ / /| |/ /   / ,<        / /  / / / /  |/ / __/"
+echo $cy "   / __  / ___ / /___/ /| |      / /__/ /_/ / /|  / /"   $me" For"
+echo $me "  /_/ /_/_/  |_\____/_/ |_|     /____/\____/_/ |_/_____/"$me" Andr>
+echo
+sleep 1
+echo $i"Terima Kasih Sudah Pakai Tool Saya"
+sleep 1
+echo $i"Bila Terdapat Bug Bisa Lapor Kepada Saya"
+sleep 1
+echo $i"WhatsApp :"$i" 08961708628"
+echo $i"Author   :"$i" FHM99"
+echo $i"TEAM   :"$i"   ÎÑĎØNESIAN•DarkNET {From Cyber To Brother}   "
+echo $i"GitHub   :"$i" https://github.com/fahms99"
 exit
-;;
-
-*) echo "sorry, pilihan yang anda cari tidak ada"
-esac
-done
-done
+fi
